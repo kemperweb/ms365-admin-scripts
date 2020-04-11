@@ -56,8 +56,8 @@ The "Name" field corresponds the policy package's "Identity".
 
 Bind the desired policy package, e.g. "Education_PrimaryStudent", to the variable `$policyPackage`:
 
-`$policyPackage = Get-CsPolicyPackage -Identity "Education_PrimaryStudent"`
+`$policyPackage = Get-CsPolicyPackage -Identity "Education_SecondaryStudent"`
 
 Finally, you can assign this package to all selected members using the `Assign-PolicyPackage.ps1`script:
 
-`.\Assign-PolicyPackage.ps1 $users $policyPackage`
+`.\Assign-PolicyPackage.ps1 $members $policyPackage`
